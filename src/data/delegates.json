@@ -1,0 +1,17 @@
+[
+  { "sNo": 1, "name": "Vikram Deshpande", "affiliation": "University of Cambridge", "country": "England" },
+  { "sNo": 2, "name": "Caglar Oskay", "affiliation": "Vanderbilt University", "country": "United States of America" },
+  { "sNo": 3, "name": "Federico Bosi", "affiliation": "University College London", "country": "England" },
+  { "sNo": 4, "name": "Dennis Kochmann", "affiliation": "ETH Zürich", "country": "Switzerland" },
+  { "sNo": 5, "name": "D. Roy Mahapatra", "affiliation": "IISc Bengaluru", "country": "India" },
+  { "sNo": 6, "name": "Anoop Krishnan", "affiliation": "IIT Delhi", "country": "India" },
+  { "sNo": 7, "name": "Ilaksh Adlakha", "affiliation": "IIT Madras", "country": "India" },
+  { "sNo": 8, "name": "Brandon Runnels", "affiliation": "Iowa State University", "country": "United States of America" },
+  { "sNo": 9, "name": "Diego Misseroni", "affiliation": "University of Trento", "country": "Italy" },
+  { "sNo": 10, "name": "Ewald Werner", "affiliation": "Technische Universität München", "country": "Germany" },
+  { "sNo": 11, "name": "Rui Huang", "affiliation": "University of Texas, Austin", "country": "United States of America" },
+  { "sNo": 12, "name": "J.N. Reddy", "affiliation": "Texas A&M University", "country": "United States of America" },
+  { "sNo": 13, "name": "Ruike Renee Zhao", "affiliation": "Stanford University", "country": "United States of America" },
+  { "sNo": 14, "name": "Surya Kalidindi", "affiliation": "Georgia Institute of Technology", "country": "United States of America" },
+  { "sNo": 15, "name": "Fadi Aldakheel", "affiliation": "Leibniz Universität Hannover", "country": "Germany" }
+]
