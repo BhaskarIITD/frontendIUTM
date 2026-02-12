@@ -1,78 +1,79 @@
+/* NAVBAR CONTAINER */
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  justify-content: space-between;
+  padding: 0.9rem 2.5rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
   position: sticky;
   top: 0;
   z-index: 1000;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
-.navbar-logo a {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #333;
-  text-decoration: none;
-  font-family: 'Playfair Display', serif; /* Example premium font */
+/* LEFT — LOGO */
+.logo-wrap img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
 }
 
-.navbar-links {
+/* CENTER — LINKS */
+.nav-center {
   display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 2.2rem;
+  align-items: center;
 }
 
-.navbar-links a {
+.nav-center a {
   text-decoration: none;
-  color: #555;
+  color: #173a5e;
   font-weight: 500;
-  transition: color 0.3s ease;
   font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  transition: color 0.25s ease;
 }
 
-.navbar-links a:hover {
-  color: #000;
+.nav-center a:hover {
+  color: #0b2239;
 }
 
-.navbar-auth {
+/* RIGHT SIDE */
+.nav-right {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
-.btn-login, .btn-logout {
-  padding: 0.5rem 1.5rem;
+/* PRIMARY BUTTON */
+.btn-primary {
+  background: #1c4d7a;
+  color: white;
+  padding: 0.55rem 1.4rem;
+  text-decoration: none;
   border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: #163d62;
+}
+
+/* OUTLINE BUTTON */
+.btn-outline {
+  border: 1px solid #1c4d7a;
+  color: #1c4d7a;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  background: transparent;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
 }
 
-.btn-login {
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #333;
-}
-
-.btn-login:hover {
-  background-color: #000;
-  border-color: #000;
-}
-
-.btn-logout {
-  background-color: transparent;
-  color: #333;
-  border: 1px solid #ddd;
-}
-
-.btn-logout:hover {
-  border-color: #333;
+.btn-outline:hover {
+  background: #1c4d7a;
+  color: white;
 }

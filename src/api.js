@@ -1,23 +1,39 @@
-import axios from 'axios';
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
-const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
-    withCredentials: true
-});
+async function apiFetch(endpoint, options = {}) {
+  const token = localStorage.getItem("token");
 
-// Add a request interceptor to include the token in headers
-api.interceptors.request.use(
-    (config) => {
-        const token = localStorage.getItem('token');
-        if (token) {
-            config.headers.Authorization = `Bearer ${token}`;
-        }
-        return config;
-    },
-    (error) => {
-        return Promise.reject(error);
-    }
-);
+  const headers = {
+    "Content-Type": "application/json",
+    ...(options.headers || {}),
+  };
 
-export default api;
+  if (token) {
+    headers.Authorization = `Bearer ${token}`;
+  }
 
+  const response = await fetch(`${BASE_URL}${endpoint}`, {
+    ...options,
+    headers,
+    credentials: "include", // same as withCredentials: true
+  });
+
+  // Auto-handle JSON errors like axios
+  let data;
+  try {
+    data = await response.json();
+  } catch {
+    data = null;
+  }
+
+  if (!response.ok) {
+    const error = new Error(data?.message || "Request failed");
+    error.status = response.status;
+    error.data = data;
+    throw error;
+  }
+
+  return data;
+}
+
+export default apiFetch;

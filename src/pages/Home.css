@@ -1,0 +1,183 @@
+/* GLOBAL STRUCTURE */
+.home {
+  background: #f7f9fc;
+}
+
+/* CONTAINER */
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+  padding: 2.2rem 0;
+}
+
+/* SPLIT HERO */
+.hero-split {
+  display: flex;
+  height: 70vh;
+  min-height: 520px;
+  background: white;
+  margin-bottom: 1.2rem;
+}
+
+/* LEFT IMAGE — 75% */
+.hero-left {
+  flex: 7.5;
+  background-size: cover;
+  background-position: center;
+}
+
+/* RIGHT PANEL — 25% */
+.hero-right {
+  flex: 2.5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 2.8rem;
+  background: #f9fbfd;
+}
+
+/* TOP RIGHT LOGO */
+.hero-logo-top {
+  position: absolute;
+  top: 20px;
+  right: 80px;
+}
+
+.hero-logo-top img {
+  width: 250px;
+}
+
+/* EVENT LABEL */
+.hero-label {
+  font-size: 0.9rem;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #1c4d7a;
+  margin-bottom: 0.6rem;
+}
+
+/* DIVIDER */
+.hero-divider {
+  width: 42px;
+  height: 3px;
+  background: #1c4d7a;
+  margin-bottom: 1.4rem;
+}
+
+/* TITLE */
+.hero-topic {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #0b2239;
+  margin-bottom: 1.2rem;
+}
+
+/* LOCATION */
+.hero-date {
+  font-size: 1.02rem;
+  color: #1c4d7a;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+
+/* BANNER */
+.banner {
+  background: white;
+  padding: 3rem 0;
+}
+
+.banner h2 {
+  font-size: 4.2rem;
+  color: #0b2239;
+}
+
+.title {
+  font-weight: bolder;
+}
+
+/* SPLIT SECTION */
+.split {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.split-text h3 {
+  font-size: 2rem;
+  color: #1c4d7a;
+  margin-bottom: 1rem;
+}
+
+.split-text p {
+  line-height: 1.7;
+}
+
+.split-images {
+  display: flex;
+  gap: 1rem;
+}
+
+.split-images img {
+  width: 220px;
+  border-radius: 12px;
+}
+
+/* ABOUT TEXT IMPROVEMENT */
+.about {
+  text-align: center;
+  padding-top: 0rem;
+}
+
+.about-text {
+  max-width: 900px;
+  margin: 50px;
+  font-size: 0.85rem;
+  line-height: 1.85;
+  color: #333;
+}
+
+.about-text p {
+  margin-bottom: 1.4rem;
+}
+
+
+/* FOOTER */
+.footer {
+  background: #ffffff;
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+
+/* TOP SEPARATOR */
+.footer-divider {
+  width: 92%;
+  max-width: 1100px;
+  height: 1px;
+  background: #e3e8ef;
+  margin: 0 auto 2rem auto;
+}
+
+/* LOGO ROW */
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* LOGO SIZE */
+.footer-logos img {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* TEXT */
+.footer-text {
+  font-size: 0.9rem;
+  color: #6b7a90;
+}
